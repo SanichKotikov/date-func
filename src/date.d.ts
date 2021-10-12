@@ -1,0 +1,16 @@
+declare type ReadonlyDate = Omit<Date,
+  | 'setTime'
+  | 'setMilliseconds'
+  | 'setUTCMilliseconds'
+  | 'setSeconds'
+  | 'setUTCSeconds'
+  | 'setMinutes'
+  | 'setUTCMinutes'
+  | 'setHours'
+  | 'setUTCHours'
+  | 'setDate'
+  | 'setUTCDate'
+  | 'setMonth'
+  | 'setUTCMonth'
+  | 'setFullYear'
+  | 'setUTCFullYear'>;
