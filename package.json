@@ -1,13 +1,14 @@
 {
   "name": "date-func",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "sideEffects": false,
   "scripts": {
     "start": "tsc --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "uvu -r tsm tests"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
   ],
   "keywords": [],
   "devDependencies": {
-    "typescript": "4.4.4"
+    "tsm": "2.2.1",
+    "typescript": "4.6.3",
+    "uvu": "0.5.3"
   }
 }
